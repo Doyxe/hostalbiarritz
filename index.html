@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título SEO optimizado -->
+  <title>Hostal Biarritz | Alojamiento en Puerta del Sol, Madrid</title>
+
+  <!-- Metaetiquetas SEO -->
+  <meta name="description" content="Hostal Biarritz en Madrid centro, a pasos de la Puerta del Sol. Habitaciones cómodas, excelente ubicación y atención personalizada. Reserva al mejor precio.">
+  <meta name="keywords" content="hostal en Madrid centro, alojamiento Puerta del Sol, Hostal Biarritz, habitaciones económicas Madrid, reservar hostal Madrid">
+  <meta name="author" content="Hostal Biarritz">
+  <link rel="canonical" href="https://www.hostalbiarritz.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph (para redes sociales) -->
+  <meta property="og:title" content="Hostal Biarritz - Alojamiento en Puerta del Sol, Madrid">
+  <meta property="og:description" content="Hostal acogedor y céntrico en Madrid. Habitaciones cómodas a pasos de la Puerta del Sol. Reserva ya.">
+  <meta property="og:image" content="https://www.hostalbiarritz.com/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://www.hostalbiarritz.com">
+  <meta property="og:type" content="website">
+
+  <!-- Rich Snippet (Schema.org JSON-LD) para hotel -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Hostal Biarritz",
+    "image": "https://www.hostalbiarritz.com/assets/img/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle de la Victoria, 2",
+      "addressLocality": "Madrid",
+      "postalCode": "28012",
+      "addressCountry": "ES"
+    },
+    "url": "https://www.hostalbiarritz.com/",
+    "telephone": "+34 915219212",
+    "priceRange": "€€",
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "WiFi gratuito", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Aire acondicionado", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Televisión en habitaciones", "value": true }
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.4165,
+      "longitude": -3.7038
+    }
+  }
+  </script>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Librería AOS para animaciones -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+  <!-- Estilo base -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER + HERO -->
+  <header class="sticky-top bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="Hostal Biarritz" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav me-3">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+          <a href="#contacto" class="btn btn-header-reservar">Reservar ahora</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SEPARADO -->
+  <section class="hero-section text-white d-flex align-items-center justify-content-center text-center">
+    <div class="container hero-content">
+      <h1 class="display-4 fw-bold">Más de 40 años de experiencia</h1>
+      <p class="lead">Alojamiento acogedor en el centro de Madrid, junto a la Puerta del Sol. Ideal para turistas, parejas o viajeros de negocios.</p>
+    </div>
+  </section>
+
+  <!-- POR QUÉ ELEGIRNOS -->
+<section class="porque-elegirnos py-5 bg-white" id="elegirnos" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-5">¿Por qué elegirnos?</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card card-hover h-100 shadow-sm">
+            <img src="assets/img/puerta-de-sol.png" class="card-img-top" alt="Puerta del Sol">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">A un paso de la Puerta del Sol</h5>
+              <p class="card-text">El <strong>Hostal Biarritz en Madrid centro</strong> goza de una excelente ubicación, a solo unos pasos de la emblemática <strong>Puerta del Sol</strong>, ideal para turistas y viajeros de negocios.</p>
+              <a href="#contacto" class="btn btn-primary-custom mt-auto">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card card-hover h-100 shadow-sm">
+            <img src="assets/img/museo.jpg" class="card-img-top" alt="Museos de Madrid">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Una perfecta céntrica ubicación</h5>
+              <p class="card-text">Alójate junto a los <strong>principales museos de Madrid</strong>: Museo del Prado, Reina Sofía y Thyssen-Bornemisza. También cerca de la <strong>Plaza Mayor</strong> y el <strong>Palacio Real</strong>.</p>
+              <a href="#contacto" class="btn btn-primary-custom mt-auto">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card card-hover h-100 shadow-sm">
+            <img src="assets/img/comida.jpg" class="card-img-top" alt="Gastronomía madrileña">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Gastronomía y compras en Madrid</h5>
+              <p class="card-text">        Disfruta de la mejor <strong>gastronomía madrileña</strong> y una amplia oferta de tiendas y comercios locales, todo a pocos metros del <strong>Hostal Biarritz</strong> en el corazón de la ciudad.</p>
+              <a href="#contacto" class="btn btn-primary-custom mt-auto">Reservar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- GALERÍA -->
+<section id="galeria" class="galeria-section py-5">
+  <div class="container text-center text-white">
+    <h2 class="mb-3">Galería de imágenes del Hostal Biarritz Madrid</h2>
+    <p class="mb-5">  Descubre en imágenes nuestras <strong>habitaciones confortables</strong> y <strong>zonas comunes acogedoras</strong> en una ubicación privilegiada en el <strong>centro de Madrid</strong>, a pocos pasos de la Puerta del Sol.</p>
+
+    <h4 class="text-uppercase mb-4">Recepción</h4>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 mb-3">
+        <img src="assets/img/recepcion1.jpg" class="img-fluid rounded recepcion-img open-modal" alt="Recepción 1">
+      </div>
+      <div class="col-md-6 mb-3">
+        <img src="assets/img/recepcion2.jpg" class="img-fluid rounded recepcion-img open-modal" alt="Recepción 2">
+      </div>
+    </div>
+
+<h4 class="text-uppercase mb-4">Habitaciones</h4>
+
+<div class="position-relative">
+  <!-- Botón IZQUIERDA -->
+  <button id="scrollLeft" class="scroll-btn scroll-left">
+    &#10094;
+  </button>
+
+  <!-- Carrusel horizontal -->
+  <div class="habitaciones-scroll">
+    <img src="assets/img/hab1.jpg" alt="Hab 1" class="img-carousel open-modal">
+    <img src="assets/img/hab2.jpg" alt="Hab 2" class="img-carousel open-modal">
+    <img src="assets/img/hab3.jpg" alt="Hab 3" class="img-carousel open-modal">
+    <img src="assets/img/hab4.jpg" alt="Hab 4" class="img-carousel open-modal">
+    <img src="assets/img/hab5.jpg" alt="Hab 5" class="img-carousel open-modal">
+    <img src="assets/img/hab6.jpg" alt="Hab 6" class="img-carousel open-modal">
+    <img src="assets/img/hab7.jpg" alt="Hab 7" class="img-carousel open-modal">
+    <img src="assets/img/hab8.jpg" alt="Hab 8" class="img-carousel open-modal">
+    <img src="assets/img/hab9.jpg" alt="Hab 9" class="img-carousel open-modal">
+    <img src="assets/img/hab10.jpg" alt="Hab 10" class="img-carousel open-modal">
+  </div>
+
+  <!-- Botón DERECHA -->
+  <button id="scrollRight" class="scroll-btn scroll-right">
+    &#10095;
+  </button>
+</div>
+
+</section>
+
+<!-- MODAL -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark border-0 position-relative">
+      <div class="modal-body p-0">
+        <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" id="modalCarouselInner"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselModal" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN: Bienvenida y Servicios -->
+<section class="bienvenida-servicios py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-stretch">
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="col-lg-6 mb-4 mb-lg-0 d-flex flex-column justify-content-between">
+        <div>
+          <h2 class="fw-bold">Hostal acogedor en el centro de Madrid</h2>
+          <p class="lead">En <strong>Hostal Biarritz Madrid</strong> te damos la bienvenida a un alojamiento familiar con más de 20 años de experiencia. Nuestro objetivo es ofrecer un <strong>trato cercano y personalizado</strong> para que disfrutes una estancia cómoda y segura en el corazón de la capital.</p>
+        </div>
+        <img src="assets/img/hostal.jpg" alt="Fachada del Hostal" class="img-fluid rounded shadow mt-3">
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+      <div class="col-lg-6 d-flex flex-column justify-content-between">
+        <div class="card h-100 shadow-sm servicios-card p-4">
+          <h3 class="fw-bold mb-4">Servicios del Hostal Biarritz</h3>
+
+          <ul class="servicios-lista">
+                <li><i class="bi bi-wifi"></i> Wifi gratuito en todo el establecimiento</li>
+                <li><i class="bi bi-tv"></i> Televisión en todas las habitaciones</li>
+                <li><i class="bi bi-snow"></i> Aire acondicionado individual</li>
+                <li><i class="bi bi-shield-lock"></i> Caja fuerte en habitación</li>
+                <li><i class="bi bi-person"></i> Instalaciones accesibles</li>
+                <li><i class="bi bi-geo-alt"></i> Ubicación céntrica en la Puerta del Sol</li>
+                </ul>
+
+
+          <!-- TARJETAS -->
+          <div class="medios-pago mt-auto">
+            <div class="d-flex gap-3 align-items-center mb-2">
+              <img src="assets/img//mastercard.jpg" alt="Visa" class="tarjeta-icon">
+              <img src="assets/img/visa.jpg" alt="Mastercard" class="tarjeta-icon">
+              <img src="assets/img/maestro.jpg" alt="Maestro" class="tarjeta-icon">
+            </div>
+            <p class="text-muted mb-0" style="font-size: 0.9rem;">Tarifas sujetas a condiciones en el establecimiento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contacto-section py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <!-- Título y descripción con animación -->
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h1 class="fw-bold mb-3">Reservar Hostal en Madrid Centro</h1>
+          <p class="text-muted">
+            Contacta con <strong>Hostal Biarritz</strong> y solicita tu reserva en el corazón de Madrid. Elige entre habitaciones simples, dobles o triples y garantiza tu estancia al mejor precio.
+          </p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="card p-4 shadow-lg border-0 rounded-4" data-aos="fade-up" data-aos-delay="150">
+          <form action="https://formsubmit.co/tucorreo@gmail.com" method="POST">
+            <div class="row g-3">
+              <!-- Fechas -->
+              <div class="col-md-6">
+                <label for="fechaEntrada" class="form-label">Fecha de Entrada</label>
+                <input type="date" id="fechaEntrada" name="Fecha de Entrada" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label for="fechaSalida" class="form-label">Fecha de Salida</label>
+                <input type="date" id="fechaSalida" name="Fecha de Salida" class="form-control" required>
+              </div>
+
+              <!-- Tipo de habitación -->
+              <div class="col-md-6">
+                <label for="habitacion" class="form-label">Tipo de Habitación</label>
+                <select id="habitacion" name="Tipo de Habitación" class="form-select" required>
+                  <option disabled selected>Selecciona una opción</option>
+                  <option value="Simple">Habitación Simple</option>
+                  <option value="Doble">Habitación Doble</option>
+                  <option value="Triple">Habitación Triple</option>
+                </select>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" id="email" name="Email" class="form-control" placeholder="ejemplo@email.com" required>
+              </div>
+
+              <!-- Nombre -->
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre Completo</label>
+                <input type="text" id="nombre" name="Nombre" class="form-control" required>
+              </div>
+
+              <!-- Teléfono -->
+              <div class="col-md-6">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" id="telefono" name="Teléfono" class="form-control" required placeholder="+34 123 45 67 89">
+              </div>
+
+              <!-- Mensaje -->
+              <div class="col-12">
+                <label for="mensaje" class="form-label">Observaciones</label>
+                <textarea id="mensaje" name="Mensaje" rows="4" class="form-control" placeholder="¿Tienes alguna petición especial?"></textarea>
+              </div>
+
+              <!-- Botón -->
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-primary-custom px-5 py-2">Reservar Ahora</button>
+              </div>
+            </div>
+
+            <!-- Seguridad y redirección -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://tusitio.com/gracias">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-custom text-white pt-5" style="background-color: #3D3AA5;" id="footer">
+  <!-- CONTACTO SUPERIOR -->
+  <div class="container text-center mb-5">
+    <h2 class="fw-bold display-6">Contacta con nosotros</h2>
+    <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i> <a href="tel:+3495219212" class="text-white text-decoration-none">+34 91 521 92 12</a></p>
+    <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i> <a href="tel:+3495318476" class="text-white text-decoration-none">+34 91 531 84 76</a></p>
+    <p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:contacto@hostalbiarritz.com" class="text-white text-decoration-none">contacto@hostalbiarritz.com</a></p>
+  </div>
+
+  <!-- MAPA -->
+    <div class="footer-mapa mb-3">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6530879742577!2d-3.7043051233103323!3d40.41653537143969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288092c8a761%3A0xbae4999824ede0f4!2sHostal%20Biarritz!5e0!3m2!1ses!2ses!4v1750952401777!5m2!1ses!2ses"   
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+
+
+  <!-- CALLE -->
+  <div class="container text-center mt-3">
+    <p class="text-white-50 small mb-4">Calle de la Victoria, 2 - 28012 Madrid, España</p>
+  </div>
+
+  <!-- LOGO Y BOTÓN -->
+  <div class="container pb-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <img src="assets/img/logo.png" alt="Hostal Biarritz logo" style="max-height: 60px;">
+      <a href="#contacto" class="btn btn-light mt-3 mt-md-0 fw-semibold">Reservar Ahora</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- BOTÓN FLOTANTE DE IR ARRIBA -->
+<a href="#" class="btn-scroll-up" aria-label="Volver arriba">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+
+  <!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+  flatpickr("#fechaEntrada", {
+    dateFormat: "Y-m-d",
+    minDate: "today",
+    locale: "es"
+  });
+
+  flatpickr("#fechaSalida", {
+    dateFormat: "Y-m-d",
+    minDate: "today",
+    locale: "es"
+  });
+</script>
+
+
+</body>
+</html>
