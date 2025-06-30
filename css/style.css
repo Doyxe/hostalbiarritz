@@ -33,8 +33,8 @@ nav.navbar.scrolled {
 }
 
 .btn-header-reservar {
-  background-color: white;
-  color: #3D3AA5;
+  background-color: #3D3AA5;
+  color: white;
   border: none;
   font-weight: 500;
   padding: 0.5rem 1rem;
@@ -44,8 +44,8 @@ nav.navbar.scrolled {
 }
 
 .btn-header-reservar:hover {
-  background-color: #3D3AA5;
-  color: white;
+  background-color: white;
+  color: #3D3AA5;
 }
 
 /* Estilo para el fondo del navbar al estar colapsado en móviles */

@@ -225,13 +225,18 @@
   <div class="container">
     <div class="row align-items-stretch">
       <!-- COLUMNA IZQUIERDA -->
-      <div class="col-lg-6 mb-4 mb-lg-0 d-flex flex-column justify-content-between">
-        <div>
-          <h2 class="fw-bold">Hostal acogedor en el centro de Madrid</h2>
-          <p class="lead">En <strong>Hostal Biarritz Madrid</strong> te damos la bienvenida a un alojamiento familiar con más de 20 años de experiencia. Nuestro objetivo es ofrecer un <strong>trato cercano y personalizado</strong> para que disfrutes una estancia cómoda y segura en el corazón de la capital.</p>
-        </div>
-        <img src="assets/img/hostal.jpg" alt="Fachada del Hostal" class="img-fluid rounded shadow mt-3">
-      </div>
+<div class="col-lg-6 mb-4 mb-lg-0 d-flex flex-column justify-content-between">
+  <div>
+    <h2 class="fw-bold">Hostal acogedor en el centro de Madrid</h2>
+    <p>
+      En <strong>Hostal Biarritz Madrid</strong> te damos la bienvenida a un alojamiento familiar con más de 40 años de experiencia. 
+      Nuestro objetivo es ofrecer un <strong>trato cercano y personalizado</strong> para que disfrutes una estancia cómoda y segura 
+      en el corazón de la capital.
+    </p>
+  </div>
+  <img src="assets/img/hostal.jpg" alt="Fachada del Hostal" class="img-fluid rounded shadow mt-3">
+</div>
+
 
       <!-- COLUMNA DERECHA -->
       <div class="col-lg-6 d-flex flex-column justify-content-between">
@@ -326,9 +331,24 @@
               </div>
 
               <!-- Botón -->
-              <div class="col-12 text-center mt-4">
-                <button type="submit" class="btn btn-primary-custom px-5 py-2">Reservar Ahora</button>
-              </div>
+                <!-- Botones de acción -->
+        <!-- Botones con texto intermedio -->
+            <div class="col-12 text-center mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+              
+              <!-- Botón de enviar formulario -->
+              <button type="submit" class="btn btn-primary-custom px-4 py-2">
+                Reservar Ahora
+              </button>
+
+              <!-- Texto "o también por" -->
+              <span class="text-muted fw-semibold">o también por</span>
+
+              <!-- Botón de WhatsApp -->
+              <a href="https://wa.me/34915219212?text=Hola,%20quiero%20información%20sobre%20una%20reserva%20en%20Hostal%20Biarritz" 
+                target="_blank" 
+                class="btn btn-success px-4 py-2">
+                WhatsApp <i class="fab fa-whatsapp ms-2"></i>
+              </a>
             </div>
 
             <!-- Seguridad y redirección -->
@@ -349,6 +369,15 @@
     <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i> <a href="tel:+3495219212" class="text-white text-decoration-none">+34 91 521 92 12</a></p>
     <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i> <a href="tel:+3495318476" class="text-white text-decoration-none">+34 91 531 84 76</a></p>
     <p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:contacto@hostalbiarritz.com" class="text-white text-decoration-none">contacto@hostalbiarritz.com</a></p>
+    <!-- Botón WhatsApp en el footer -->
+    <div class="d-flex justify-content-center align-items-center flex-column flex-md-row gap-2 mt-3">
+      <a href="https://wa.me/34915219212?text=Hola,%20quiero%20hacer%20una%20reserva%20en%20Hostal%20Biarritz" 
+        target="_blank" 
+        class="btn btn-light text-nowrap fw-semibold">
+        WhatsApp <i class="fab fa-whatsapp ms-2"></i>
+      </a>
+    </div>
+
   </div>
 
   <!-- MAPA -->
