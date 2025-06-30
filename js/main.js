@@ -43,4 +43,35 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  // ENVÍO DE FORMULARIO CON FORMsubmit (sin redirección)
+  const form = document.getElementById("reservaForm");
+  const alertBox = document.getElementById("form-alert");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      fetch("https://formsubmit.co/ajax/f5328e29da086beea2be9bb1341651ba", {
+        method: "POST",
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+        .then(response => {
+          if (response.ok) {
+            alertBox.classList.remove("d-none");
+            form.reset();
+            setTimeout(() => {
+              alertBox.classList.add("d-none");
+            }, 5000);
+          } else {
+            alert("Hubo un error al enviar el mensaje.");
+          }
+        })
+        .catch(error => {
+          alert("No se pudo enviar el formulario. Intenta más tarde.");
+        });
+    });
+  }
 });

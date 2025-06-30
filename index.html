@@ -273,7 +273,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
 
-        <!-- Título y descripción con animación -->
+        <!-- Título y descripción -->
         <div class="text-center mb-5" data-aos="fade-up">
           <h1 class="fw-bold mb-3">Reservar Hostal en Madrid Centro</h1>
           <p class="text-muted">
@@ -283,7 +283,7 @@
 
         <!-- Formulario -->
         <div class="card p-4 shadow-lg border-0 rounded-4" data-aos="fade-up" data-aos-delay="150">
-          <form action="https://formsubmit.co/tucorreo@gmail.com" method="POST">
+          <form id="reservaForm">
             <div class="row g-3">
               <!-- Fechas -->
               <div class="col-md-6">
@@ -309,7 +309,7 @@
               <!-- Email -->
               <div class="col-md-6">
                 <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" id="email" name="Email" class="form-control" placeholder="ejemplo@email.com" required>
+                <input type="email" id="email" name="Email" class="form-control" required>
               </div>
 
               <!-- Nombre -->
@@ -321,39 +321,31 @@
               <!-- Teléfono -->
               <div class="col-md-6">
                 <label for="telefono" class="form-label">Teléfono</label>
-                <input type="tel" id="telefono" name="Teléfono" class="form-control" required placeholder="+34 123 45 67 89">
+                <input type="tel" id="telefono" name="Teléfono" class="form-control" required>
               </div>
 
               <!-- Mensaje -->
               <div class="col-12">
                 <label for="mensaje" class="form-label">Observaciones</label>
-                <textarea id="mensaje" name="Mensaje" rows="4" class="form-control" placeholder="¿Tienes alguna petición especial?"></textarea>
+                <textarea id="mensaje" name="Mensaje" rows="4" class="form-control"></textarea>
               </div>
 
-              <!-- Botón -->
-                <!-- Botones de acción -->
-        <!-- Botones con texto intermedio -->
-            <div class="col-12 text-center mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-              
-              <!-- Botón de enviar formulario -->
-              <button type="submit" class="btn btn-primary-custom px-4 py-2">
-                Reservar Ahora
-              </button>
+              <!-- Botones -->
+              <div class="col-12 text-center mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                <button type="submit" class="btn btn-primary-custom px-4 py-2">Reservar Ahora</button>
+                <span class="text-muted fw-semibold">o también por</span>
+                <a href="https://wa.me/628050010?text=Hola,%20quiero%20reservar%20una%20habitación%20en%20el%20Hostal%20Biarritz" 
+                   target="_blank" 
+                   class="btn btn-success px-4 py-2">
+                  WhatsApp <i class="fab fa-whatsapp ms-2"></i>
+                </a>
+              </div>
 
-              <!-- Texto "o también por" -->
-              <span class="text-muted fw-semibold">o también por</span>
-
-              <!-- Botón de WhatsApp -->
-              <a href="https://wa.me/34915219212?text=Hola,%20quiero%20información%20sobre%20una%20reserva%20en%20Hostal%20Biarritz" 
-                target="_blank" 
-                class="btn btn-success px-4 py-2">
-                WhatsApp <i class="fab fa-whatsapp ms-2"></i>
-              </a>
+              <!-- Mensaje de éxito -->
+              <div id="form-alert" class="alert alert-success mt-3 text-center d-none">
+                Mensaje enviado con éxito
+              </div>
             </div>
-
-            <!-- Seguridad y redirección -->
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://tusitio.com/gracias">
           </form>
         </div>
 
@@ -371,7 +363,7 @@
     <p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:contacto@hostalbiarritz.com" class="text-white text-decoration-none">contacto@hostalbiarritz.com</a></p>
     <!-- Botón WhatsApp en el footer -->
     <div class="d-flex justify-content-center align-items-center flex-column flex-md-row gap-2 mt-3">
-      <a href="https://wa.me/34915219212?text=Hola,%20quiero%20hacer%20una%20reserva%20en%20Hostal%20Biarritz" 
+      <a href="https://wa.me/628050010?text=Hola,%20quiero%20hacer%20una%20reserva%20en%20Hostal%20Biarritz" 
         target="_blank" 
         class="btn btn-light text-nowrap fw-semibold">
         WhatsApp <i class="fab fa-whatsapp ms-2"></i>
