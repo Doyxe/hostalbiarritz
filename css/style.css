@@ -393,6 +393,44 @@ nav.navbar.scrolled {
   transform: scale(1.1);
 }
 
+.lang-option {
+  color: #3D3AA5;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.lang-option:hover,
+.lang-option.active {
+  background-color: #3D3AA5;
+  color: #ffffff;
+}
+
+
+#languageButton {
+  color: #3D3AA5;
+  background-color: #ffffff;
+  border: 1px solid #3D3AA5;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#languageButton:hover {
+  background-color: #3D3AA5;
+  color: #ffffff;
+}
+
+
 
 @media (max-width: 576px) {
   .hero-content h1 {
