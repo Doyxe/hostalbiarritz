@@ -55,34 +55,57 @@
 <body>
 <header class="sticky-top bg-transparent">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Hostal Biarritz" height="40"></a>
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Hostal Biarritz" height="40"></a>
+
+    <!-- Idiomas a la izquierda del botón hamburguesa en móvil -->
+    <div class="d-flex align-items-center d-lg-none">
+      <div class="dropdown me-2">
+        <button id="languageButton" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
+          <img id="selected-flag" src="assets/img/banderas/es.png" width="20" class="me-2">ES
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item lang-option" href="#" data-lang="es"><img src="assets/img/banderas/es.png" width="20" class="me-2">Español</a></li>
+          <li><a class="dropdown-item lang-option" href="#" data-lang="en"><img src="assets/img/banderas/gb.png" width="20" class="me-2">English</a></li>
+          <li><a class="dropdown-item lang-option" href="#" data-lang="de"><img src="assets/img/banderas/de.png" width="20" class="me-2">Deutsch</a></li>
+          <li><a class="dropdown-item lang-option" href="#" data-lang="it"><img src="assets/img/banderas/it.png" width="20" class="me-2">Italiano</a></li>
+        </ul>
+      </div>
+
+      <!-- Botón hamburguesa -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav me-3">
-          <li class="nav-item"><a class="nav-link" href="#" data-key="inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#galeria" data-key="galeria">Galería</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicios" data-key="servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto" data-key="contacto">Contacto</a></li>
-        </ul>
-        <a href="#contacto" class="btn btn-header-reservar" data-key="reservarAhora">Reservar ahora</a>
-        <div class="dropdown ms-3">
-          <button id="languageButton" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
-            <img id="selected-flag" src="assets/img/banderas/es.png" width="20" class="me-2">ES
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item lang-option" href="#" data-lang="es"><img src="assets/img/banderas/es.png" width="20" class="me-2">Español</a></li>
-            <li><a class="dropdown-item lang-option" href="#" data-lang="en"><img src="assets/img/banderas/gb.png" width="20" class="me-2">English</a></li>
-            <li><a class="dropdown-item lang-option" href="#" data-lang="de"><img src="assets/img/banderas/de.png" width="20" class="me-2">Deutsch</a></li>
-            <li><a class="dropdown-item lang-option" href="#" data-lang="it"><img src="assets/img/banderas/it.png" width="20" class="me-2">Italiano</a></li>
-          </ul>
+    </div>
 
-        </div>
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link" href="#" data-key="inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria" data-key="galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicios" data-key="servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto" data-key="contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="btn btn-header-reservar" data-key="reservarAhora">Reservar ahora</a>
+
+      <!-- Idiomas también en desktop -->
+      <div class="dropdown d-none d-lg-block ms-3">
+        <button id="languageButton" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
+          <img id="selected-flag-desktop" src="assets/img/banderas/es.png" width="20" class="me-2">ES
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item lang-option" href="#" data-lang="es"><img src="assets/img/banderas/es.png" width="20" class="me-2">Español</a></li>
+          <li><a class="dropdown-item lang-option" href="#" data-lang="en"><img src="assets/img/banderas/gb.png" width="20" class="me-2">English</a></li>
+          <li><a class="dropdown-item lang-option" href="#" data-lang="de"><img src="assets/img/banderas/de.png" width="20" class="me-2">Deutsch</a></li>
+          <li><a class="dropdown-item lang-option" href="#" data-lang="it"><img src="assets/img/banderas/it.png" width="20" class="me-2">Italiano</a></li>
+        </ul>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
 </header>
 
   <!-- HERO SEPARADO -->
