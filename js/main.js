@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const scrollBtn = document.querySelector('.btn-scroll-up');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
-      scrollBtn.style.display = 'block';
+      scrollBtn.style.display = 'flex';
     } else {
       scrollBtn.style.display = 'none';
     }
@@ -79,12 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // -------------------------
   // SISTEMA MULTILENGUAJE
-  // -------------------------
   const langElements = document.querySelectorAll('[data-key]');
   const languageButton = document.getElementById('languageButton');
-  const selectedFlag = document.getElementById('selected-flag');
   const langOptions = document.querySelectorAll('.lang-option');
 
   function setLanguage(lang) {
@@ -99,11 +96,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         const flag = lang === 'en' ? 'gb' : lang;
-        selectedFlag.src = `assets/img/banderas/${flag}.png`;
-        languageButton.innerHTML = `
-          <img id="selected-flag" src="assets/img/banderas/${flag}.png" width="20" class="me-2">
-          ${lang.toUpperCase()}
-        `;
+        if (languageButton) {
+          languageButton.innerHTML = `
+            <img id="selected-flag" src="assets/img/banderas/${flag}.png" width="20" class="me-2">
+            ${lang.toUpperCase()}
+          `;
+        }
 
         langOptions.forEach(opt => {
           opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
@@ -114,8 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(err => console.error('Error cargando lang.json:', err));
   }
 
-  const savedLang = localStorage.getItem('lang') || navigator.language.slice(0,2);
-  const initialLang = ['es','en','de','it'].includes(savedLang) ? savedLang : 'es';
+  const savedLang = localStorage.getItem('lang') || navigator.language.slice(0, 2);
+  const initialLang = ['es', 'en', 'de', 'it'].includes(savedLang) ? savedLang : 'es';
   setLanguage(initialLang);
 
   langOptions.forEach(option => {
