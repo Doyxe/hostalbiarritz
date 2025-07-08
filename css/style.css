@@ -306,15 +306,16 @@ nav.navbar.scrolled {
 .medios-pago .tarjeta-icon:hover {
   transform: scale(1.05);
 }
-
-/* === FORMULARIO DE CONTACTO === */
-.contacto-section h2 {
+/* === FORMULARIO DE CONTACTO AJUSTADO === */
+.contacto-section h1 {
   color: #1e1e1e;
+  font-size: 2rem;
 }
 
 .contacto-section label {
   font-weight: 500;
   color: #333;
+  margin-bottom: 0.5rem;
 }
 
 .contacto-section .form-control,
@@ -322,7 +323,9 @@ nav.navbar.scrolled {
   border-radius: 8px;
   padding: 0.75rem;
   border: 1px solid #ccc;
-  box-shadow: none;
+  background-color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contacto-section .form-control:focus,
@@ -330,6 +333,39 @@ nav.navbar.scrolled {
   border-color: #3D3AA5;
   box-shadow: 0 0 0 0.2rem rgba(61, 58, 165, 0.25);
 }
+
+/* Hover visual de opciones (en navegadores que lo permiten) */
+.contacto-section select option:hover {
+  background-color: #ecebff;
+  color: #1e1e1e;
+}
+
+/* Botones */
+.contacto-section button[type="submit"],
+.contacto-section .btn-success {
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+}
+
+/* Alineación de botones y texto */
+.contacto-section .form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Mensaje de éxito */
+#form-alert {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
 
 /* === FOOTER === */
 .footer-custom a {

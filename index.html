@@ -295,6 +295,83 @@
   </div>
 </section>
 
+<section id="contacto" class="contacto-section py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h1 class="fw-bold mb-3" data-key="formTitulo">Reservar Hostal en Madrid Centro</h1>
+      <p class="text-muted" data-key="formTexto">
+        Contacta con <strong>Hostal Biarritz</strong> y solicita tu reserva en el corazón de Madrid.
+      </p>
+    </div>
+
+    <form id="reservaForm" data-aos="fade-up">
+      <div class="row g-3">
+
+        <div class="col-md-4">
+          <label for="fechaEntrada" class="form-label" data-key="fechaEntrada">Fecha de Entrada</label>
+          <input type="date" class="form-control" id="fechaEntrada" name="Fecha Entrada" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="fechaSalida" class="form-label" data-key="fechaSalida">Fecha de Salida</label>
+          <input type="date" class="form-control" id="fechaSalida" name="Fecha Salida" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="habitacion" class="form-label" data-key="tipoHabitacion">Tipo de Habitación</label>
+          <select id="habitacion" class="form-select" name="Tipo de Habitación" required>
+            <option disabled selected data-key="opcionSeleccion">Selecciona una opción</option>
+            <option value="Simple" data-key="simple">Habitación Simple</option>
+            <option value="Doble" data-key="doble">Habitación Doble</option>
+            <option value="Triple" data-key="triple">Habitación Triple</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="email" class="form-label" data-key="correo">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" name="Email" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="nombre" class="form-label" data-key="nombre">Nombre Completo</label>
+          <input type="text" class="form-control" id="nombre" name="Nombre" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="telefono" class="form-label" data-key="telefono">Teléfono</label>
+          <input type="tel" class="form-control" id="telefono" name="Teléfono">
+        </div>
+
+        <div class="col-12">
+          <label for="mensaje" class="form-label" data-key="mensaje">Observaciones</label>
+          <textarea class="form-control" id="mensaje" name="Mensaje" rows="4"></textarea>
+        </div>
+
+        <!-- Botones -->
+        <div class="col-12 form-actions text-center">
+          <button type="submit" class="btn btn-primary-custom" data-key="btnFormulario">Reservar Ahora</button>
+          <span class="text-muted fw-semibold mx-2" data-key="oPor">o también por</span>
+          <a href="https://wa.me/628050010?text=Hola,%20quiero%20hacer%20una%20reserva%20en%20Hostal%20Biarritz"
+             target="_blank" class="btn btn-success">
+            <span data-key="footerWhatsapp">WhatsApp</span>
+            <i class="fab fa-whatsapp ms-2"></i>
+          </a>
+        </div>
+
+        <!-- Mensaje de éxito -->
+        <div class="col-12">
+          <div id="form-alert" class="alert alert-success mt-4 text-center d-none" data-key="mensajeExito">
+            Mensaje enviado con éxito
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+
 <footer class="footer-custom text-white pt-5" style="background-color: #3D3AA5;" id="footer">
   <!-- CONTACTO SUPERIOR -->
   <div class="container text-center mb-5">
